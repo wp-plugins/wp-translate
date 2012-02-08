@@ -31,14 +31,6 @@ function create_prosperity_plugin_links($links, $file) {
 }
 add_filter('plugin_row_meta', 'create_prosperity_plugin_links', 10, 2);
 
-//function add_wp_translate_menu() {
-//	add_menu_page(__('WP Translate','menu-wptranslate'), __('WP Translate','menu-wptranslate'), 'manage_options', 'wptranslate-admin', 'show_translate_menu' );
-//}
-//add_action( 'admin_menu', 'add_wp_translate_menu' );
-//
-//function show_translate_menu()
-//{
-//	include("admin/overview.php");
-//}
+
 
 ?>
