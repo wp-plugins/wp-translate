@@ -31,6 +31,6 @@ function create_prosperity_plugin_links($links, $file) {
 }
 add_filter('plugin_row_meta', 'create_prosperity_plugin_links', 10, 2);
 
-//Edit to branch
+//Edit to trunk
 
 ?>
