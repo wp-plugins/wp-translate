@@ -1,7 +1,7 @@
 === WP Translate ===
 Contributors: hahncgdev
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J
-Tags: translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater, translators, tradutor, traduction, traduttore, übersetzung, terjemahan, tercüman
+Tags: translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater, translators
 Requires at least: 2.6
 Tested up to: 3.3.1
 Stable tag: 0.6
@@ -24,3 +24,4 @@ Other plugins: <a href="http://labs.hahncreativegroup.com/wordpress-plugins/cust
 **Feb. 6, 2012 - v0.5**
 
 * First Release
+
