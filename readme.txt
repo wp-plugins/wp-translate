@@ -24,4 +24,3 @@ Other plugins: <a href="http://labs.hahncreativegroup.com/wordpress-plugins/cust
 **Feb. 6, 2012 - v0.5**
 
 * First Release
-
