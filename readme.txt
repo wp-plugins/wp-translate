@@ -28,4 +28,3 @@ Other plugins: <a href="http://labs.hahncreativegroup.com/wordpress-plugins/cust
 **Feb. 21, 2012 - v0.6**
 
 * Added ability to select default langauge
-
