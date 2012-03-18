@@ -1,7 +1,7 @@
 === WP Translate ===
 Contributors: hahncgdev
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J
-Tags: translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater, translators
+Tags: translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater
 Requires at least: 2.6
 Tested up to: 3.3.1
 Stable tag: 0.6
@@ -25,3 +25,6 @@ Other plugins: <a href="http://labs.hahncreativegroup.com/wordpress-plugins/cust
 
 * First Release
 
+**Feb. 21, 2012 - v0.6**
+
+* Added ability to select default langauge
