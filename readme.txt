@@ -12,9 +12,7 @@ Google Translate for WordPress. Adds a Google Translate widget to your website.
 
 This plugin dynamically adds a Google Translate widget to the upper right of your users screen. This will allow visitors to translate your website content to any language.
 
-<a href='http://labs.hahncreativegroup.com/wordpress-plugins/wp-translate/'>DEMO</a>
-
-Other plugins: <a href="http://wordpress.org/extend/plugins/custom-post-donations/" title="Custom Post Donations - PayPal Donations in WordPress">Custom Post Donations</a>, <a href="http://labs.hahncreativegroup.com/wordpress-plugins/custom-post-donations-pro/" title="Custom Post Donations Pro - PayPal Donations in WordPress">Custom Post Donations Pro</a>, <a href="http://wordpress.org/extend/plugins/wp-easy-gallery/" title="WP Easy Gallery">WP Easy Gallery</a>, <a href="http://labs.hahncreativegroup.com/wordpress-plugins/wp-easy-gallery-pro-simple-wordpress-gallery-plugin/" title="WP Easy Gallery Pro">WP Easy Gallery Pro</a>
+Other plugins: <a href="http://labs.hahncreativegroup.com/easy-image-gallery/" title="Easy Image Gallery">WP Easy Gallery Pro</a>, <a href="http://labs.hahncreativegroup.com/paypal-for-wordpress/" title="PayPal for WordPress">Custom Post Donations Pro</a>, <a href="http://wordpress.org/extend/plugins/custom-post-donations/" title="Custom Post Donations - PayPal Donations in WordPress">Custom Post Donations</a>, <a href="http://wordpress.org/extend/plugins/wp-easy-gallery/" title="WP Easy Gallery">WP Easy Gallery</a>
 
 == Installation ==
 
