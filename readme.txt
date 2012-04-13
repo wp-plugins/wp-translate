@@ -28,4 +28,3 @@ Other plugins: <a href="http://labs.hahncreativegroup.com/easy-image-gallery/" t
 **Mar. 26, 2012 - v1.0**
 
 * Added ability to select default langauge
-
