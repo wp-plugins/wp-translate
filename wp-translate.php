@@ -4,16 +4,30 @@ Plugin Name: WP Translate
 Plugin URI: http://labs.hahncreativegroup.com/plugins-for-wordpress/
 Description: Add Google Translate to your WordPress site
 Author: HahnCreativeGroup
-Version: 0.6
+Version: 3.0
 Author URI: http://labs.hahncreativegroup.com/
 */
+register_activation_hook( __FILE__,  'wpTranslate_install' );
+
+function wpTranslate_install() {
+	$wpTranslateOptions = array(
+								"default_language" => "auto"
+								);
+	
+	add_option("wpTranslateOptions", $wpTranslateOptions);
+}
 
 function translate_Init() {
+	$wpTranslateOptions = get_option("wpTranslateOptions");
 	?>
     <script>
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
-    pageLanguage: 'auto',
+    pageLanguage: '<?php echo $wpTranslateOptions["default_language"]; ?>',
+    <?php if ($wpTranslateOptions["tracking_enabled"]) { ?>
+	gaTrack: true,
+    gaId: '<?php echo $wpTranslateOptions["tracking_id"]; ?>',
+	<?php } ?>
     floatPosition: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
   });
 }
@@ -22,15 +36,22 @@ function googleTranslateElementInit() {
 }
 add_action('wp_footer', 'translate_Init');
 
-function create_prosperity_plugin_links($links, $file) {
-			
+function create_translate_plugin_links($links, $file) {			
 	if ( $file == plugin_basename(__FILE__) ) {			
 		$links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J">' . __('Donate', 'wp-translate') . '</a>';
 	}
 	return $links;
 }
-add_filter('plugin_row_meta', 'create_prosperity_plugin_links', 10, 2);
+add_filter('plugin_row_meta', 'create_translate_plugin_links', 10, 2);
 
-//Edit to trunk
+function add_wp_translate_menu() {
+	add_menu_page(__('WP Translate','menu-wptranslate'), __('WP Translate','menu-wptranslate'), 'manage_options', 'wptranslate-admin', 'show_translate_menu' );
+}
+add_action( 'admin_menu', 'add_wp_translate_menu' );
+
+function show_translate_menu()
+{
+	include("admin/overview.php");
+}
 
 ?>

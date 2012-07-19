@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater
 Requires at least: 2.6
 Tested up to: 3.3.1
-Stable tag: 1.0
+Stable tag: 3.0
 
 Google Translate for WordPress. Adds a Google Translate widget to your website.
 
@@ -28,4 +28,8 @@ Other plugins: <a href="http://www.wordpress-photo-gallery.com" title="Responsiv
 **Mar. 26, 2012 - v1.0**
 
 * Added ability to select default langauge
+
+**Jul. 19, 2012 - v3.0**
+
+* Tightened security to prevent cross-site scripting attacks
 
