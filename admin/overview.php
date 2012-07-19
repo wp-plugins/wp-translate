@@ -1,4 +1,6 @@
 <?php
+if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You are not allowed to call this page directly.'); }
+
 	if (isset($_POST["editOptions"])) {
 		$wpTranslateOptions['default_language'] = $_POST["defaultLanguage"];
 				
