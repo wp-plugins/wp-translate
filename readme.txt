@@ -1,7 +1,7 @@
 === WP Translate ===
 Contributors: hahncgdev
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J
-Tags: translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater
+Tags: admin, google, translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater
 Requires at least: 2.6
 Tested up to: 3.3.1
 Stable tag: 3.0
@@ -12,7 +12,7 @@ Google Translate for WordPress. Adds a Google Translate widget to your website.
 
 This plugin dynamically adds a Google Translate widget to the upper right of your users screen. This will allow visitors to translate your website content to any language.
 
-Other plugins: <a href="http://www.wordpress-photo-gallery.com" title="Responsive WordPress Photo Gallery Plugin">ReFlex Gallery</a>, <a href="http://labs.hahncreativegroup.com/easy-image-gallery/" title="Easy Image Gallery">WP Easy Gallery Pro</a>, <a href="http://labs.hahncreativegroup.com/paypal-for-wordpress/" title="PayPal for WordPress">Custom Post Donations Pro</a>, <a href="http://wordpress.org/extend/plugins/custom-post-donations/" title="Custom Post Donations - PayPal Donations in WordPress">Custom Post Donations</a>, <a href="http://wordpress.org/extend/plugins/wp-easy-gallery/" title="WP Easy Gallery">WP Easy Gallery</a>, <a href="http://wordpress.org/extend/plugins/prosperity/">Prosperity</a>
+Other plugins: <a href="http://www.wordpress-photo-gallery.com" title="Responsive WordPress Photo Gallery Plugin">ReFlex Gallery</a>, <a href="http://labs.hahncreativegroup.com/easy-image-gallery/" title="Easy Image Gallery">WP Easy Gallery Pro</a>, <a href="http://labs.hahncreativegroup.com/paypal-for-wordpress/" title="PayPal for WordPress">Custom Post Donations Pro</a>, <a href="http://wordpress.org/extend/plugins/custom-post-donations/" title="Custom Post Donations - PayPal Donations in WordPress">Custom Post Donations</a>, <a href="http://wordpress.org/extend/plugins/wp-easy-gallery/" title="WP Easy Gallery">WP Easy Gallery</a>, <a href="http://wpplugins.com/plugin/986/email-obfuscate/">Email Obfuscate</a> and <a href="http://wordpress.org/extend/plugins/prosperity/">Prosperity</a>
 
 == Installation ==
 
