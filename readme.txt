@@ -8,11 +8,11 @@ Stable tag: 3.0
 
 Google Translate for WordPress. Adds a Google Translate widget to your website.
 
-<a href="http://labs.hahncreativegroup.com/wordpress-plugins/wp-translate/" title="WP Tranlate - Google Translate Plugin for WordPress">WP Translate Demo</a>
-
 == Description ==
 
 This plugin dynamically adds a Google Translate widget to the upper right of your users screen. This will allow visitors to translate your website content to any language.
+
+<a href="http://labs.hahncreativegroup.com/wordpress-plugins/wp-translate/" title="WP Tranlate - Google Translate Plugin for WordPress">WP Translate Demo</a>
 
 Other plugins: <a href="http://www.wordpress-photo-gallery.com" title="Responsive WordPress Photo Gallery Plugin">ReFlex Gallery</a>, <a href="http://labs.hahncreativegroup.com/easy-image-gallery/" title="Easy Image Gallery">WP Easy Gallery Pro</a>, <a href="http://labs.hahncreativegroup.com/paypal-for-wordpress/" title="PayPal for WordPress">Custom Post Donations Pro</a>, <a href="http://wordpress.org/extend/plugins/custom-post-donations/" title="Custom Post Donations - PayPal Donations in WordPress">Custom Post Donations</a>, <a href="http://wordpress.org/extend/plugins/wp-easy-gallery/" title="WP Easy Gallery">WP Easy Gallery</a>, <a href="http://wpplugins.com/plugin/986/email-obfuscate/">Email Obfuscate</a> and <a href="http://wordpress.org/extend/plugins/prosperity/">Prosperity</a>
 
