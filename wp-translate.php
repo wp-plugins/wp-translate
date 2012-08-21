@@ -7,6 +7,7 @@ Author: HahnCreativeGroup
 Version: 3.0
 Author URI: http://labs.hahncreativegroup.com/
 */
+
 register_activation_hook( __FILE__,  'wpTranslate_install' );
 
 function wpTranslate_install() {
@@ -53,5 +54,4 @@ function show_translate_menu()
 {
 	include("admin/overview.php");
 }
-
 ?>

@@ -8,6 +8,8 @@ Stable tag: 3.0
 
 Google Translate for WordPress. Adds a Google Translate widget to your website.
 
+<a href="http://labs.hahncreativegroup.com/wordpress-plugins/wp-translate/" title="WP Tranlate - Google Translate Plugin for WordPress">WP Translate Demo</a>
+
 == Description ==
 
 This plugin dynamically adds a Google Translate widget to the upper right of your users screen. This will allow visitors to translate your website content to any language.
