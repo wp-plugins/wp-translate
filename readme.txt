@@ -1,7 +1,7 @@
 === WP Translate ===
 Contributors: hahncgdev
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J
-Tags: admin, google, translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater
+Tags: admin, google, plugin, translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater
 Requires at least: 2.6
 Tested up to: 3.3.1
 Stable tag: 3.0
