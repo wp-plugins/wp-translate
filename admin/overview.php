@@ -3,6 +3,12 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
 
 	if (isset($_POST["editOptions"])) {
 		$wpTranslateOptions['default_language'] = $_POST["defaultLanguage"];
+		if (isset($_POST["trackingEnabled"]))
+			$wpTranslateOptions['tracking_enabled'] = true;
+		else
+			$wpTranslateOptions['tracking_enabled'] = false;
+			
+		$wpTranslateOptions['tracking_id'] = $_POST["trackingId"];
 				
 		update_option("wpTranslateOptions", $wpTranslateOptions);
 		?>  
@@ -77,7 +83,11 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
                     <option value="vi" <?php if($wpTranslateOptions['default_language'] == 'vi') echo 'selected'; ?>>Vietnamese</option>
                     <option value="cy" <?php if($wpTranslateOptions['default_language'] == 'cy') echo 'selected'; ?>>Welsh</option>
                     <option value="yi" <?php if($wpTranslateOptions['default_language'] == 'yi') echo 'selected'; ?>>Yiddish</option>
-                </select>                
+                </select>
+                <h3><?php _e('Translation Tracking - Google Analytics'); ?></h3>
+                <label><?php _e('Tracking enabled'); ?>:</label> <input type="checkbox" name="trackingEnabled" value="true"<?php echo ($wpTranslateOptions['tracking_enabled']) ? " checked='yes'" : ""; ?> />
+                <br />
+                <label><?php _e('Tracking ID (UA#)'); ?></label>: <input type="text" name="trackingId" value="<?php echo $wpTranslateOptions['tracking_id']; ?>" />                
                 <p class="major-publishing-actions"><input type="submit" name="Submit" class="button-primary" value="<?php _e('Save Settings'); ?>" /></p>
                 </form>
                 <br />

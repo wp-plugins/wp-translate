@@ -4,13 +4,21 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin, google, plugin, translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater
 Requires at least: 2.6
 Tested up to: 3.3.1
-Stable tag: 3.0
+Stable tag: 4.0
+License: GPLv2
 
 Google Translate for WordPress. Adds a Google Translate widget to your website.
 
 == Description ==
 
 This plugin dynamically adds a Google Translate widget to the upper right of your users screen. This will allow visitors to translate your website content to any language. Bring your website to the global market place today!
+
+**Newly added - Google Analytics integration** - See what languages visitors are translating your content into.
+
+Features include:
+
+* Set default language
+* Track translation usage with Goolge Analytics
 
 <a href="http://labs.hahncreativegroup.com/wordpress-plugins/wp-translate/" title="WP Tranlate - Google Translate Plugin for WordPress">WP Translate Demo</a>
 
@@ -34,4 +42,8 @@ Other plugins: <a href="http://www.wordpress-photo-gallery.com" title="Responsiv
 **Jul. 19, 2012 - v3.0**
 
 * Tightened security to prevent cross-site scripting attacks
+
+**Sept. 13, 2012 - v4.0**
+
+* Added Google Analytics Integration
 
