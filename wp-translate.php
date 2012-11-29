@@ -5,7 +5,7 @@ Plugin Name: WP Translate
 Plugin URI: http://labs.hahncreativegroup.com/wordpress-plugins/wp-translate/
 Description: Add Google Translate to your WordPress site
 Author: HahnCreativeGroup
-Version: 4.0
+Version: 4.0.1
 Author URI: http://labs.hahncreativegroup.com/
 */
 
@@ -49,7 +49,7 @@ function create_translate_plugin_links($links, $file) {
 add_filter('plugin_row_meta', 'create_translate_plugin_links', 10, 2);
 
 function add_wp_translate_menu() {
-	add_menu_page(__('WP Translate','menu-wptranslate'), __('WP Translate','menu-wptranslate'), 'manage_options', 'wptranslate-admin', 'show_translate_menu' );
+	add_menu_page(__('WP Translate','wp-translate'), __('WP Translate','wp-translate'), 'manage_options', 'wptranslate-admin', 'show_translate_menu' );
 }
 add_action( 'admin_menu', 'add_wp_translate_menu' );
 

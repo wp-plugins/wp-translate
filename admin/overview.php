@@ -12,15 +12,15 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
 				
 		update_option("wpTranslateOptions", $wpTranslateOptions);
 		?>  
-        <div class="updated"><p><strong><?php _e('WP Translate settings have been saved.' ); ?></strong></p></div>  
+        <div class="updated"><p><strong><?php _e('WP Translate settings have been saved.', 'wp-translate' ); ?></strong></p></div>  
         <?php
 	}
 	$wpTranslateOptions = get_option("wpTranslateOptions");
 ?>
 <div id='wrap'>
-	<h2><?php _e('WP Translate - Settings'); ?></h2>
+	<h2><?php _e('WP Translate - Settings', 'wp-translate'); ?></h2>
     
-    <h3 style="float: left; width 50%;"><?php _e('Default Language'); ?></h3>
+    <h3 style="float: left; width 50%;"><?php _e('Default Language', 'wp-translate'); ?></h3>
     <p style="float: right; width 50%; margin-right: 14px;"><strong><em><a href="http://labs.hahncreativegroup.com/wp-translate-pro/"><?php _e('Try WP Translate Pro'); ?></a></em></strong></p>
     <div style="clear: both;"></div>
     <form name="wp_translate_settings_form" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>" method="post">
@@ -86,15 +86,15 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
                     <option value="cy" <?php if($wpTranslateOptions['default_language'] == 'cy') echo 'selected'; ?>>Welsh</option>
                     <option value="yi" <?php if($wpTranslateOptions['default_language'] == 'yi') echo 'selected'; ?>>Yiddish</option>
                 </select>
-                <h3><?php _e('Translation Tracking - Google Analytics'); ?></h3>
-                <label><?php _e('Tracking enabled'); ?>:</label> <input type="checkbox" name="trackingEnabled" value="true"<?php echo ($wpTranslateOptions['tracking_enabled']) ? " checked='yes'" : ""; ?> />
+                <h3><?php _e('Translation Tracking - Google Analytics', 'wp-translate'); ?></h3>
+                <label><?php _e('Tracking enabled', 'wp-translate'); ?>:</label> <input type="checkbox" name="trackingEnabled" value="true"<?php echo ($wpTranslateOptions['tracking_enabled']) ? " checked='yes'" : ""; ?> />
                 <br />
-                <label><?php _e('Tracking ID (UA#)'); ?></label>: <input type="text" name="trackingId" value="<?php echo $wpTranslateOptions['tracking_id']; ?>" />                
-                <p class="major-publishing-actions"><input type="submit" name="Submit" class="button-primary" value="<?php _e('Save Settings'); ?>" /></p>
+                <label><?php _e('Tracking ID (UA#)', 'wp-translate'); ?></label>: <input type="text" name="trackingId" value="<?php echo $wpTranslateOptions['tracking_id']; ?>" />                
+                <p class="major-publishing-actions"><input type="submit" name="Submit" class="button-primary" value="<?php _e('Save Settings', 'wp-translate'); ?>" /></p>
                 </form>
                 <br />
                 <div style="float: left; width: 60%; min-width: 488px;">
-                <p><strong><a href="http://labs.hahncreativegroup.com/wp-translate-pro/"><?php _e('Try WP Translate Pro'); ?></a></strong><br /><em>Pro features include: Enhanced widget positioning, add free...</em></p>
+                <p><strong><a href="http://labs.hahncreativegroup.com/wp-translate-pro/"><?php _e('Try WP Translate Pro', 'wp-translate'); ?></a></strong><br /><em>Pro features include: Enhanced widget positioning, add free...</em></p>
 <p><strong>Try WP Easy Gallery Pro</strong><br /><em>Pro Features include: Multi-image uploader, Enhanced admin section for easier navigation, Image preview pop-up, and more...</em></p>
 <p><a href="http://labs.hahncreativegroup.com/wordpress-plugins/wp-easy-gallery-pro-simple-wordpress-gallery-plugin/?src=wpt" target="_blank"><img title="WP-Easy-Gallery-Pro_468x88" src="http://labs.hahncreativegroup.com/wp-content/uploads/2012/02/WP-Easy-Gallery-Pro_468x88.gif" alt="" border="0" width="468" height="88" /></a></p>
 <p><strong>Try Custom Post Donations Pro</strong><br /><em>This WordPress plugin will allow you to create unique customized PayPal donation widgets to insert into your WordPress posts or pages and accept donations. Features include: Multiple Currencies, Multiple PayPal accounts, Custom donation form display titles, and more.</em></p>

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin, google, plugin, translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater, traducir, traduzir, menterjemahkan
 Requires at least: 2.6
 Tested up to: 3.4.2
-Stable tag: 4.0
+Stable tag: 4.0.1
 License: GPLv2
 
 Google Translate for WordPress. Adds a Google Translate widget to your website.
@@ -51,4 +51,8 @@ Other plugins: <a href='http://labs.hahncreativegroup.com/wp-translate-pro/'>WP 
 **Sept. 13, 2012 - v4.0**
 
 * Added Google Analytics Integration
+
+**Nov. 28, 2012 - v4.0.1**
+
+* Code refinement and bug fixes
 
