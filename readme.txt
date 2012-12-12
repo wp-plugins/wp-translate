@@ -1,7 +1,7 @@
 === WP Translate ===
 Contributors: hahncgdev
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J
-Tags: admin, google, plugin, translate, translation, translations, translation for wordpress, website translation, google translate for wordpress, translater, traducir, traduzir, menterjemahkan
+Tags: admin, google, plugin, translate, translation, translations, website translation, Post, page
 Requires at least: 2.6
 Tested up to: 3.4.2
 Stable tag: 4.0.1
@@ -36,23 +36,22 @@ Other plugins: <a href='http://labs.hahncreativegroup.com/wp-translate-pro/'>WP 
 
 == Changelog ==
 
-**Feb. 6, 2012 - v0.5**
+**Nov. 28, 2012 - v4.0.1**
 
-* First Release
-
-**Mar. 26, 2012 - v1.0**
-
-* Added ability to select default langauge
-
-**Jul. 19, 2012 - v3.0**
-
-* Tightened security to prevent cross-site scripting attacks
+* Code refinement and bug fixes
 
 **Sept. 13, 2012 - v4.0**
 
 * Added Google Analytics Integration
 
-**Nov. 28, 2012 - v4.0.1**
+**Jul. 19, 2012 - v3.0**
 
-* Code refinement and bug fixes
+* Tightened security to prevent cross-site scripting attacks
 
+**Mar. 26, 2012 - v1.0**
+
+* Added ability to select default langauge
+
+**Feb. 6, 2012 - v0.5**
+
+* First Release
