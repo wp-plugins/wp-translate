@@ -3,7 +3,7 @@ Contributors: hahncgdev
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J
 Tags: admin, google, plugin, translate, translation, translations, website translation, Post, page
 Requires at least: 2.6
-Tested up to: 3.4.2
+Tested up to: 3.5
 Stable tag: 4.0.1
 License: GPLv2
 
