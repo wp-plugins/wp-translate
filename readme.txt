@@ -1,7 +1,7 @@
 === WP Translate ===
 Contributors: hahncgdev
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J
-Tags: admin, google, plugin, translate, translation, translations, website translation, Post, page
+Tags: admin, google, plugin, translate, translation, translations, website translation, Post, page, posts
 Requires at least: 2.6
 Tested up to: 3.5
 Stable tag: 4.0.1
@@ -27,7 +27,7 @@ Features include:
 
 <a href="http://labs.hahncreativegroup.com/wp-translate-pro/">Upgrade to WP Translate Pro</a>
 
-Other plugins: <a href='http://labs.hahncreativegroup.com/wp-translate-pro/'>WP Translate Pro</a>, <a href='http://wordpress.org/extend/plugins/reflex-gallery/' title="Responsive WordPress Photo Gallery Plugin">ReFlex Gallery</a>, <a href="http://labs.hahncreativegroup.com/easy-image-gallery/" title="Easy Image Gallery">WP Easy Gallery Pro</a>, <a href="http://labs.hahncreativegroup.com/paypal-for-wordpress/" title="PayPal for WordPress">Custom Post Donations Pro</a>, <a href="http://wordpress.org/extend/plugins/custom-post-donations/" title="Custom Post Donations - PayPal Donations in WordPress">Custom Post Donations</a>, <a href="http://wordpress.org/extend/plugins/wp-easy-gallery/" title="WP Easy Gallery">WP Easy Gallery</a>, <a href="http://codecanyon.net/item/jquery-email-obfuscate-plugin/721738/?ref=HahnCreativeGroup">Email Obfuscate</a> and <a href="http://wordpress.org/extend/plugins/prosperity/">Prosperity</a>
+Other plugins: <a href='http://labs.hahncreativegroup.com/wp-translate-pro/'>WP Translate Pro</a>, <a href='http://wordpress-photo-gallery.com/#gallery'>ReFlex Gallery Pro</a>, <a href='http://wordpress.org/extend/plugins/reflex-gallery/' title="Responsive WordPress Photo Gallery Plugin">ReFlex Gallery</a>, <a href="http://labs.hahncreativegroup.com/easy-image-gallery/" title="Easy Image Gallery">WP Easy Gallery Pro</a>, <a href="http://labs.hahncreativegroup.com/paypal-for-wordpress/" title="PayPal for WordPress">Custom Post Donations Pro</a>, <a href="http://wordpress.org/extend/plugins/custom-post-donations/" title="Custom Post Donations - PayPal Donations in WordPress">Custom Post Donations</a>, <a href="http://wordpress.org/extend/plugins/wp-easy-gallery/" title="WP Easy Gallery">WP Easy Gallery</a>, <a href="http://codecanyon.net/item/jquery-email-obfuscate-plugin/721738/?ref=HahnCreativeGroup">Email Obfuscate</a> and <a href="http://wordpress.org/extend/plugins/prosperity/">Prosperity</a>
 
 == Installation ==
 
