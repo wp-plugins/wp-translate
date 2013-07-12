@@ -3,18 +3,26 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
 
 	if (isset($_POST["editOptions"])) {
 		$wpTranslateOptions['default_language'] = $_POST["defaultLanguage"];
+		if (isset($_POST["trackingEnabled"]))
+			$wpTranslateOptions['tracking_enabled'] = true;
+		else
+			$wpTranslateOptions['tracking_enabled'] = false;
+			
+		$wpTranslateOptions['tracking_id'] = $_POST["trackingId"];
 				
 		update_option("wpTranslateOptions", $wpTranslateOptions);
 		?>  
-        <div class="updated"><p><strong><?php _e('WP Translate settings have been saved.' ); ?></strong></p></div>  
+        <div class="updated"><p><strong><?php _e('WP Translate settings have been saved.', 'wp-translate' ); ?></strong></p></div>  
         <?php
 	}
 	$wpTranslateOptions = get_option("wpTranslateOptions");
 ?>
 <div id='wrap'>
-	<h2><?php _e('WP Translate - Settings'); ?></h2>
+	<h2><?php _e('WP Translate - Settings', 'wp-translate'); ?></h2>
     
-    <h3><?php _e('Default Language'); ?></h3>
+    <h3 style="float: left; width 50%;"><?php _e('Default Language', 'wp-translate'); ?></h3>
+    <p style="float: right; width 50%; margin-right: 14px;"><strong><em><a href="http://labs.hahncreativegroup.com/wp-translate-pro/"><?php _e('Try WP Translate Pro'); ?></a></em></strong></p>
+    <div style="clear: both;"></div>
     <form name="wp_translate_settings_form" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>" method="post">
     <input type="hidden" name="editOptions" vale="true" />
     <select id="defaultLanguage" name="defaultLanguage">
@@ -77,15 +85,48 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
                     <option value="vi" <?php if($wpTranslateOptions['default_language'] == 'vi') echo 'selected'; ?>>Vietnamese</option>
                     <option value="cy" <?php if($wpTranslateOptions['default_language'] == 'cy') echo 'selected'; ?>>Welsh</option>
                     <option value="yi" <?php if($wpTranslateOptions['default_language'] == 'yi') echo 'selected'; ?>>Yiddish</option>
-                </select>                
-                <p class="major-publishing-actions"><input type="submit" name="Submit" class="button-primary" value="<?php _e('Save Settings'); ?>" /></p>
+                </select>
+                <h3><?php _e('Translation Tracking - Google Analytics', 'wp-translate'); ?></h3>
+                <label><?php _e('Tracking enabled', 'wp-translate'); ?>:</label> <input type="checkbox" name="trackingEnabled" value="true"<?php echo ($wpTranslateOptions['tracking_enabled']) ? " checked='yes'" : ""; ?> />
+                <br />
+                <label><?php _e('Tracking ID (UA#)', 'wp-translate'); ?></label>: <input type="text" name="trackingId" value="<?php echo $wpTranslateOptions['tracking_id']; ?>" />                
+                <p class="major-publishing-actions"><input type="submit" name="Submit" class="button-primary" value="<?php _e('Save Settings', 'wp-translate'); ?>" /></p>
                 </form>
                 <br />
-     <p><em>Please consider making a donatation for the continued development of this plugin. Thanks.</em></p>
-<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></a></p>
-<br />
+                <div style="float: left; width: 60%; min-width: 488px;">
+                <p><strong><a href="http://labs.hahncreativegroup.com/wp-translate-pro/"><?php _e('Try WP Translate Pro', 'wp-translate'); ?></a></strong><br /><em>Pro features include: Enhanced widget positioning, add free...</em></p>
 <p><strong>Try WP Easy Gallery Pro</strong><br /><em>Pro Features include: Multi-image uploader, Enhanced admin section for easier navigation, Image preview pop-up, and more...</em></p>
 <p><a href="http://labs.hahncreativegroup.com/wordpress-plugins/wp-easy-gallery-pro-simple-wordpress-gallery-plugin/?src=wpt" target="_blank"><img title="WP-Easy-Gallery-Pro_468x88" src="http://labs.hahncreativegroup.com/wp-content/uploads/2012/02/WP-Easy-Gallery-Pro_468x88.gif" alt="" border="0" width="468" height="88" /></a></p>
 <p><strong>Try Custom Post Donations Pro</strong><br /><em>This WordPress plugin will allow you to create unique customized PayPal donation widgets to insert into your WordPress posts or pages and accept donations. Features include: Multiple Currencies, Multiple PayPal accounts, Custom donation form display titles, and more.</em></p>
 <p><a href="http://labs.hahncreativegroup.com/wordpress-plugins/custom-post-donations-pro/?src=wpt"><img src="http://labs.hahncreativegroup.com/wp-content/uploads/2011/10/CustomPostDonationsPro-Banner.gif" width="374" height="60" border="0" alt="Custom Post Donations Pro" /></a></p>
+<p><strong>Try ReFlex Gallery Pro</strong><br /><em>ReFlex Gallery is a fully responsive WordPress image gallery plugin that is actually two galleries in one.</em></p>
+<p><a href="http://wordpress-photo-gallery.com/?src=wpt"><img src="http://labs.hahncreativegroup.com/wp-content/uploads/2012/08/reflex_gallery_page_image_374x190_v4.jpg" width="374" height="190" alt="ReFlex Gallery - Responsive WordPress Photo Gallery" border="0" /></a></p>
+<p><em>Please consider making a donatation for the continued development of this plugin. Thanks.</em></p>
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></a></p>
+</div>
+<div style="float: right; width: 25%; height: 700px; padding: 10px; min-width: 165px; margin-right: 14px; overflow: scroll;">
+<?php
+$url = "http://labs.hahncreativegroup.com/feed/";
+$rss = simplexml_load_file($url);
+if($rss)
+{
+  echo '<h3>'.$rss->channel->title.'</h3>';
+  $items = $rss->channel->item;
+  $count = 0;
+  foreach($items as $item)
+  {
+	$count++;	
+	$title = $item->title;
+	$link = $item->link;
+	$published_on = $item->pubDate;
+	$description = $item->description;
+	echo '<h4><a href="'.$link.'">'.$title.'</a></h4>';
+	echo '<p>'.$description.'</p>';
+	if ($count >= 5) {
+		break;	
+	}
+  }
+}
+?>
+</div>
 </div>
