@@ -5,7 +5,7 @@ Plugin Name: WP Translate
 Plugin URI: http://labs.hahncreativegroup.com/wordpress-plugins/wp-translate/
 Description: Add Google Translate to your WordPress site
 Author: HahnCreativeGroup
-Version: 4.0.1
+Version: 4.2
 Author URI: http://labs.hahncreativegroup.com/
 */
 
@@ -22,9 +22,12 @@ function wpTranslate_install() {
 }
 
 function translate_Init() {
-	$wpTranslateOptions = get_option("wpTranslateOptions");
+	$wpTranslateOptions = get_option(WPTRANSLATEOPTIONS);
+	$agent = $_SERVER['HTTP_USER_AGENT'];  
+if(!preg_match('/iPhone|Android|Blackberry/i', $agent)){
 	?>
-    <script>
+	<!-- WP Translate 4.3 - Google Translate: http://labs.hahncreativegroup.com/wordpress-plugins/wp-translate/ -->
+    <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: '<?php echo $wpTranslateOptions["default_language"]; ?>',
@@ -32,13 +35,21 @@ function googleTranslateElementInit() {
 	gaTrack: true,
     gaId: '<?php echo $wpTranslateOptions["tracking_id"]; ?>',
 	<?php } ?>
-    floatPosition: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
+    floatPosition: google.translate.TranslateElement.FloatPosition.<?php echo $wpTranslateOptions["widget_position"]; ?>
   });
 }
 </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <?php	
+    <?php
+}	
 }
 add_action('wp_footer', 'translate_Init');
+
+function admin_positioning() {
+	if (current_user_can('manage_options')) {
+		_e('<style>.goog-te-ftab-float {right: 250px !important;}</style>');	
+	}
+}
+add_action('wp_head', 'admin_positioning');
 
 function create_translate_plugin_links($links, $file) {			
 	if ( $file == plugin_basename(__FILE__) ) {			
