@@ -22,9 +22,12 @@ function wpTranslate_install() {
 }
 
 function translate_Init() {
-	$wpTranslateOptions = get_option("wpTranslateOptions");
+	$wpTranslateOptions = get_option(WPTRANSLATEOPTIONS);
+	$agent = $_SERVER['HTTP_USER_AGENT'];  
+if(!preg_match('/iPhone|Android|Blackberry/i', $agent)){
 	?>
-    <script>
+	<!-- WP Translate 4.3 - Google Translate: http://labs.hahncreativegroup.com/wordpress-plugins/wp-translate/ -->
+    <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: '<?php echo $wpTranslateOptions["default_language"]; ?>',
@@ -32,11 +35,12 @@ function googleTranslateElementInit() {
 	gaTrack: true,
     gaId: '<?php echo $wpTranslateOptions["tracking_id"]; ?>',
 	<?php } ?>
-    floatPosition: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
+    floatPosition: google.translate.TranslateElement.FloatPosition.<?php echo $wpTranslateOptions["widget_position"]; ?>
   });
 }
 </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <?php	
+    <?php
+}	
 }
 add_action('wp_footer', 'translate_Init');
 
