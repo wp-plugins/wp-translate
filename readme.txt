@@ -40,7 +40,7 @@ Other plugins: <a href='http://labs.hahncreativegroup.com/wp-translate-pro/'>WP 
 
 **Apr. 14, 2014 - v4.3.4**
 
-* Added nonce for security
+* Added nonce for security on overview page
 
 **Jan. 20, 2014 - v4.3.3**
 
