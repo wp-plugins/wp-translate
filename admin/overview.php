@@ -2,18 +2,20 @@
 if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You are not allowed to call this page directly.'); }
 
 	if (isset($_POST["editOptions"])) {
-		$wpTranslateOptions['default_language'] = $_POST["defaultLanguage"];
-		if (isset($_POST["trackingEnabled"]))
-			$wpTranslateOptions['tracking_enabled'] = true;
-		else
-			$wpTranslateOptions['tracking_enabled'] = false;
+		if(check_admin_referer('wp_translate','wp_translate')) {
+			$wpTranslateOptions['default_language'] = $_POST["defaultLanguage"];
+			if (isset($_POST["trackingEnabled"]))
+				$wpTranslateOptions['tracking_enabled'] = true;
+			else
+				$wpTranslateOptions['tracking_enabled'] = false;
 			
-		$wpTranslateOptions['tracking_id'] = $_POST["trackingId"];
+			$wpTranslateOptions['tracking_id'] = $_POST["trackingId"];
 				
-		update_option("wpTranslateOptions", $wpTranslateOptions);
-		?>  
-        <div class="updated"><p><strong><?php _e('WP Translate settings have been saved.', 'wp-translate' ); ?></strong></p></div>  
-        <?php
+			update_option("wpTranslateOptions", $wpTranslateOptions);
+			?>  
+			<div class="updated"><p><strong><?php _e('WP Translate settings have been saved.', 'wp-translate' ); ?></strong></p></div>  
+			<?php
+		}
 	}
 	$wpTranslateOptions = get_option("wpTranslateOptions");
 ?>
@@ -25,6 +27,7 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
     <div style="clear: both;"></div>
     <form name="wp_translate_settings_form" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>" method="post">
     <input type="hidden" name="editOptions" vale="true" />
+	<?php wp_nonce_field('wp_translate','wp_translate'); ?>
     <select id="defaultLanguage" name="defaultLanguage">
                     <option value="auto" <?php if($wpTranslateOptions['default_language'] == 'auto') echo 'selected'; ?>>Detect language</option>
                     <option value="af" <?php if($wpTranslateOptions['default_language'] == 'af') echo 'selected'; ?>>Afrikaans</option>

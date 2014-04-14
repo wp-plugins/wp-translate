@@ -3,8 +3,8 @@ Contributors: hahncgdev
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J
 Tags: admin, google, plugin, translate, translation, translations, website translation, Post, page, posts, widget
 Requires at least: 2.6
-Tested up to: 3.8.1
-Stable tag: 4.3.3
+Tested up to: 3.8.2
+Stable tag: 4.3.4
 License: GPLv2
 
 Google Translate for WordPress. Adds a Google Translate widget to your website.
@@ -38,7 +38,11 @@ Other plugins: <a href='http://labs.hahncreativegroup.com/wp-translate-pro/'>WP 
 
 == Changelog ==
 
-**Jan 20, 2014 - v4.3.3**
+**Apr. 14, 2014 - v4.3.4**
+
+* Added nonce for security
+
+**Jan. 20, 2014 - v4.3.3**
 
 * Added Windows Phone to list of excluded mobile browsers
 
