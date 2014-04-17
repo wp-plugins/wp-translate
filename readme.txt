@@ -1,9 +1,9 @@
 === WP Translate ===
 Contributors: hahncgdev
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J
-Tags: admin, google, plugin, translate, translation, translations, website translation, Post, page, posts, widget
+Tags: admin, google, google translate, plugin, translate, translation, translations, website translation, Post, page, posts, widget
 Requires at least: 2.6
-Tested up to: 3.8.2
+Tested up to: 3.9
 Stable tag: 4.3.4
 License: GPLv2
 
@@ -40,7 +40,7 @@ Other plugins: <a href='http://labs.hahncreativegroup.com/wp-translate-pro/'>WP 
 
 **Apr. 14, 2014 - v4.3.4**
 
-* Added nonce for security on overview page
+* Added nonce for security
 
 **Jan. 20, 2014 - v4.3.3**
 
