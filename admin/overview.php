@@ -29,65 +29,65 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
     <input type="hidden" name="editOptions" vale="true" />
 	<?php wp_nonce_field('wp_translate','wp_translate'); ?>
     <select id="defaultLanguage" name="defaultLanguage">
-                    <option value="auto" <?php if($wpTranslateOptions['default_language'] == 'auto') echo 'selected'; ?>>Detect language</option>
-                    <option value="af" <?php if($wpTranslateOptions['default_language'] == 'af') echo 'selected'; ?>>Afrikaans</option>
-                    <option value="sq" <?php if($wpTranslateOptions['default_language'] == 'sq') echo 'selected'; ?>>Albanian</option>
-                    <option value="ar" <?php if($wpTranslateOptions['default_language'] == 'ar') echo 'selected'; ?>>Arabic</option>
-                    <option value="hy" <?php if($wpTranslateOptions['default_language'] == 'hy') echo 'selected'; ?>>Armenian</option>
-                    <option value="az" <?php if($wpTranslateOptions['default_language'] == 'az') echo 'selected'; ?>>Azerbaijani</option>
-                    <option value="eu" <?php if($wpTranslateOptions['default_language'] == 'eu') echo 'selected'; ?>>Basque</option>
-                    <option value="be" <?php if($wpTranslateOptions['default_language'] == 'be') echo 'selected'; ?>>Belarusian</option>
-                    <option value="bg" <?php if($wpTranslateOptions['default_language'] == 'bg') echo 'selected'; ?>>Bulgarian</option>
-                    <option value="ca" <?php if($wpTranslateOptions['default_language'] == 'ca') echo 'selected'; ?>>Catalan</option>
-                    <option value="zh-CN" <?php if($wpTranslateOptions['default_language'] == 'zh-CN') echo 'selected'; ?>>Chinese (Simplified)</option>
-                    <option value="zh-TW" <?php if($wpTranslateOptions['default_language'] == 'zh-TW') echo 'selected'; ?>>Chinese (Traditional)</option>
-                    <option value="hr" <?php if($wpTranslateOptions['default_language'] == 'hr') echo 'selected'; ?>>Croatian</option>
-                    <option value="cs" <?php if($wpTranslateOptions['default_language'] == 'cs') echo 'selected'; ?>>Czech</option>
-                    <option value="da" <?php if($wpTranslateOptions['default_language'] == 'da') echo 'selected'; ?>>Danish</option>
-                    <option value="nl" <?php if($wpTranslateOptions['default_language'] == 'nl') echo 'selected'; ?>>Dutch</option>
-                    <option value="en" <?php if($wpTranslateOptions['default_language'] == 'en') echo 'selected'; ?>>English</option>
-                    <option value="et" <?php if($wpTranslateOptions['default_language'] == 'et') echo 'selected'; ?>>Estonian</option>
-                    <option value="tl" <?php if($wpTranslateOptions['default_language'] == 'tl') echo 'selected'; ?>>Filipino</option>
-                    <option value="fi" <?php if($wpTranslateOptions['default_language'] == 'fi') echo 'selected'; ?>>Finnish</option>
-                    <option value="fr" <?php if($wpTranslateOptions['default_language'] == 'fr') echo 'selected'; ?>>French</option>
-                    <option value="gl" <?php if($wpTranslateOptions['default_language'] == 'gl') echo 'selected'; ?>>Galician</option>
-                    <option value="ka" <?php if($wpTranslateOptions['default_language'] == 'ka') echo 'selected'; ?>>Georgian</option>
-                    <option value="de" <?php if($wpTranslateOptions['default_language'] == 'de') echo 'selected'; ?>>German</option>
-                    <option value="el" <?php if($wpTranslateOptions['default_language'] == 'el') echo 'selected'; ?>>Greek</option>
-                    <option value="ht" <?php if($wpTranslateOptions['default_language'] == 'ht') echo 'selected'; ?>>Haitian Creole</option>
-                    <option value="iw" <?php if($wpTranslateOptions['default_language'] == 'iw') echo 'selected'; ?>>Hebrew</option>
-                    <option value="hi" <?php if($wpTranslateOptions['default_language'] == 'hi') echo 'selected'; ?>>Hindi</option>
-                    <option value="hu" <?php if($wpTranslateOptions['default_language'] == 'hu') echo 'selected'; ?>>Hungarian</option>
-                    <option value="is" <?php if($wpTranslateOptions['default_language'] == 'is') echo 'selected'; ?>>Icelandic</option>
-                    <option value="id" <?php if($wpTranslateOptions['default_language'] == 'id') echo 'selected'; ?>>Indonesian</option>
-                    <option value="ga" <?php if($wpTranslateOptions['default_language'] == 'ga') echo 'selected'; ?>>Irish</option>
-                    <option value="it" <?php if($wpTranslateOptions['default_language'] == 'it') echo 'selected'; ?>>Italian</option>
-                    <option value="ja" <?php if($wpTranslateOptions['default_language'] == 'ja') echo 'selected'; ?>>Japanese</option>
-                    <option value="ko" <?php if($wpTranslateOptions['default_language'] == 'ko') echo 'selected'; ?>>Korean</option>
-                    <option value="lv" <?php if($wpTranslateOptions['default_language'] == 'lv') echo 'selected'; ?>>Latvian</option>
-                    <option value="lt" <?php if($wpTranslateOptions['default_language'] == 'lt') echo 'selected'; ?>>Lithuanian</option>
-                    <option value="mk" <?php if($wpTranslateOptions['default_language'] == 'mk') echo 'selected'; ?>>Macedonian</option>
-                    <option value="ms" <?php if($wpTranslateOptions['default_language'] == 'ms') echo 'selected'; ?>>Malay</option>
-                    <option value="mt" <?php if($wpTranslateOptions['default_language'] == 'mt') echo 'selected'; ?>>Maltese</option>
-                    <option value="no" <?php if($wpTranslateOptions['default_language'] == 'no') echo 'selected'; ?>>Norwegian</option>
-                    <option value="fa" <?php if($wpTranslateOptions['default_language'] == 'fa') echo 'selected'; ?>>Persian</option>
-                    <option value="pl" <?php if($wpTranslateOptions['default_language'] == 'pl') echo 'selected'; ?>>Polish</option>
-                    <option value="pt" <?php if($wpTranslateOptions['default_language'] == 'pt') echo 'selected'; ?>>Portuguese</option>
-                    <option value="ro" <?php if($wpTranslateOptions['default_language'] == 'ro') echo 'selected'; ?>>Romanian</option>
-                    <option value="ru" <?php if($wpTranslateOptions['default_language'] == 'ru') echo 'selected'; ?>>Russian</option>
-                    <option value="sr" <?php if($wpTranslateOptions['default_language'] == 'sr') echo 'selected'; ?>>Serbian</option>
-                    <option value="sk" <?php if($wpTranslateOptions['default_language'] == 'sk') echo 'selected'; ?>>Slovak</option>
-                    <option value="sl" <?php if($wpTranslateOptions['default_language'] == 'sl') echo 'selected'; ?>>Slovenian</option>
-                    <option value="es" <?php if($wpTranslateOptions['default_language'] == 'es') echo 'selected'; ?>>Spanish</option>
-                    <option value="sw" <?php if($wpTranslateOptions['default_language'] == 'sw') echo 'selected'; ?>>Swahili</option>
-                    <option value="sv" <?php if($wpTranslateOptions['default_language'] == 'sv') echo 'selected'; ?>>Swedish</option>
-                    <option value="th" <?php if($wpTranslateOptions['default_language'] == 'th') echo 'selected'; ?>>Thai</option>
-                    <option value="tr" <?php if($wpTranslateOptions['default_language'] == 'tr') echo 'selected'; ?>>Turkish</option>
-                    <option value="uk" <?php if($wpTranslateOptions['default_language'] == 'uk') echo 'selected'; ?>>Ukrainian</option>
-                    <option value="ur" <?php if($wpTranslateOptions['default_language'] == 'ur') echo 'selected'; ?>>Urdu</option>
-                    <option value="vi" <?php if($wpTranslateOptions['default_language'] == 'vi') echo 'selected'; ?>>Vietnamese</option>
-                    <option value="cy" <?php if($wpTranslateOptions['default_language'] == 'cy') echo 'selected'; ?>>Welsh</option>
-                    <option value="yi" <?php if($wpTranslateOptions['default_language'] == 'yi') echo 'selected'; ?>>Yiddish</option>
+                    <option value="auto" <?php if($wpTranslateOptions['default_language'] == 'auto') echo esc_attr('selected'); ?>>Detect language</option>
+                    <option value="af" <?php if($wpTranslateOptions['default_language'] == 'af') echo esc_attr('selected'); ?>>Afrikaans</option>
+                    <option value="sq" <?php if($wpTranslateOptions['default_language'] == 'sq') echo esc_attr('selected'); ?>>Albanian</option>
+                    <option value="ar" <?php if($wpTranslateOptions['default_language'] == 'ar') echo esc_attr('selected'); ?>>Arabic</option>
+                    <option value="hy" <?php if($wpTranslateOptions['default_language'] == 'hy') echo esc_attr('selected'); ?>>Armenian</option>
+                    <option value="az" <?php if($wpTranslateOptions['default_language'] == 'az') echo esc_attr('selected'); ?>>Azerbaijani</option>
+                    <option value="eu" <?php if($wpTranslateOptions['default_language'] == 'eu') echo esc_attr('selected'); ?>>Basque</option>
+                    <option value="be" <?php if($wpTranslateOptions['default_language'] == 'be') echo esc_attr('selected'); ?>>Belarusian</option>
+                    <option value="bg" <?php if($wpTranslateOptions['default_language'] == 'bg') echo esc_attr('selected'); ?>>Bulgarian</option>
+                    <option value="ca" <?php if($wpTranslateOptions['default_language'] == 'ca') echo esc_attr('selected'); ?>>Catalan</option>
+                    <option value="zh-CN" <?php if($wpTranslateOptions['default_language'] == 'zh-CN') echo esc_attr('selected'); ?>>Chinese (Simplified)</option>
+                    <option value="zh-TW" <?php if($wpTranslateOptions['default_language'] == 'zh-TW') echo esc_attr('selected'); ?>>Chinese (Traditional)</option>
+                    <option value="hr" <?php if($wpTranslateOptions['default_language'] == 'hr') echo esc_attr('selected'); ?>>Croatian</option>
+                    <option value="cs" <?php if($wpTranslateOptions['default_language'] == 'cs') echo esc_attr('selected'); ?>>Czech</option>
+                    <option value="da" <?php if($wpTranslateOptions['default_language'] == 'da') echo esc_attr('selected'); ?>>Danish</option>
+                    <option value="nl" <?php if($wpTranslateOptions['default_language'] == 'nl') echo esc_attr('selected'); ?>>Dutch</option>
+                    <option value="en" <?php if($wpTranslateOptions['default_language'] == 'en') echo esc_attr('selected'); ?>>English</option>
+                    <option value="et" <?php if($wpTranslateOptions['default_language'] == 'et') echo esc_attr('selected'); ?>>Estonian</option>
+                    <option value="tl" <?php if($wpTranslateOptions['default_language'] == 'tl') echo esc_attr('selected'); ?>>Filipino</option>
+                    <option value="fi" <?php if($wpTranslateOptions['default_language'] == 'fi') echo esc_attr('selected'); ?>>Finnish</option>
+                    <option value="fr" <?php if($wpTranslateOptions['default_language'] == 'fr') echo esc_attr('selected'); ?>>French</option>
+                    <option value="gl" <?php if($wpTranslateOptions['default_language'] == 'gl') echo esc_attr('selected'); ?>>Galician</option>
+                    <option value="ka" <?php if($wpTranslateOptions['default_language'] == 'ka') echo esc_attr('selected'); ?>>Georgian</option>
+                    <option value="de" <?php if($wpTranslateOptions['default_language'] == 'de') echo esc_attr('selected'); ?>>German</option>
+                    <option value="el" <?php if($wpTranslateOptions['default_language'] == 'el') echo esc_attr('selected'); ?>>Greek</option>
+                    <option value="ht" <?php if($wpTranslateOptions['default_language'] == 'ht') echo esc_attr('selected'); ?>>Haitian Creole</option>
+                    <option value="iw" <?php if($wpTranslateOptions['default_language'] == 'iw') echo esc_attr('selected'); ?>>Hebrew</option>
+                    <option value="hi" <?php if($wpTranslateOptions['default_language'] == 'hi') echo esc_attr('selected'); ?>>Hindi</option>
+                    <option value="hu" <?php if($wpTranslateOptions['default_language'] == 'hu') echo esc_attr('selected'); ?>>Hungarian</option>
+                    <option value="is" <?php if($wpTranslateOptions['default_language'] == 'is') echo esc_attr('selected'); ?>>Icelandic</option>
+                    <option value="id" <?php if($wpTranslateOptions['default_language'] == 'id') echo esc_attr('selected'); ?>>Indonesian</option>
+                    <option value="ga" <?php if($wpTranslateOptions['default_language'] == 'ga') echo esc_attr('selected'); ?>>Irish</option>
+                    <option value="it" <?php if($wpTranslateOptions['default_language'] == 'it') echo esc_attr('selected'); ?>>Italian</option>
+                    <option value="ja" <?php if($wpTranslateOptions['default_language'] == 'ja') echo esc_attr('selected'); ?>>Japanese</option>
+                    <option value="ko" <?php if($wpTranslateOptions['default_language'] == 'ko') echo esc_attr('selected'); ?>>Korean</option>
+                    <option value="lv" <?php if($wpTranslateOptions['default_language'] == 'lv') echo esc_attr('selected'); ?>>Latvian</option>
+                    <option value="lt" <?php if($wpTranslateOptions['default_language'] == 'lt') echo esc_attr('selected'); ?>>Lithuanian</option>
+                    <option value="mk" <?php if($wpTranslateOptions['default_language'] == 'mk') echo esc_attr('selected'); ?>>Macedonian</option>
+                    <option value="ms" <?php if($wpTranslateOptions['default_language'] == 'ms') echo esc_attr('selected'); ?>>Malay</option>
+                    <option value="mt" <?php if($wpTranslateOptions['default_language'] == 'mt') echo esc_attr('selected'); ?>>Maltese</option>
+                    <option value="no" <?php if($wpTranslateOptions['default_language'] == 'no') echo esc_attr('selected'); ?>>Norwegian</option>
+                    <option value="fa" <?php if($wpTranslateOptions['default_language'] == 'fa') echo esc_attr('selected'); ?>>Persian</option>
+                    <option value="pl" <?php if($wpTranslateOptions['default_language'] == 'pl') echo esc_attr('selected'); ?>>Polish</option>
+                    <option value="pt" <?php if($wpTranslateOptions['default_language'] == 'pt') echo esc_attr('selected'); ?>>Portuguese</option>
+                    <option value="ro" <?php if($wpTranslateOptions['default_language'] == 'ro') echo esc_attr('selected'); ?>>Romanian</option>
+                    <option value="ru" <?php if($wpTranslateOptions['default_language'] == 'ru') echo esc_attr('selected'); ?>>Russian</option>
+                    <option value="sr" <?php if($wpTranslateOptions['default_language'] == 'sr') echo esc_attr('selected'); ?>>Serbian</option>
+                    <option value="sk" <?php if($wpTranslateOptions['default_language'] == 'sk') echo esc_attr('selected'); ?>>Slovak</option>
+                    <option value="sl" <?php if($wpTranslateOptions['default_language'] == 'sl') echo esc_attr('selected'); ?>>Slovenian</option>
+                    <option value="es" <?php if($wpTranslateOptions['default_language'] == 'es') echo esc_attr('selected'); ?>>Spanish</option>
+                    <option value="sw" <?php if($wpTranslateOptions['default_language'] == 'sw') echo esc_attr('selected'); ?>>Swahili</option>
+                    <option value="sv" <?php if($wpTranslateOptions['default_language'] == 'sv') echo esc_attr('selected'); ?>>Swedish</option>
+                    <option value="th" <?php if($wpTranslateOptions['default_language'] == 'th') echo esc_attr('selected'); ?>>Thai</option>
+                    <option value="tr" <?php if($wpTranslateOptions['default_language'] == 'tr') echo esc_attr('selected'); ?>>Turkish</option>
+                    <option value="uk" <?php if($wpTranslateOptions['default_language'] == 'uk') echo esc_attr('selected'); ?>>Ukrainian</option>
+                    <option value="ur" <?php if($wpTranslateOptions['default_language'] == 'ur') echo esc_attr('selected'); ?>>Urdu</option>
+                    <option value="vi" <?php if($wpTranslateOptions['default_language'] == 'vi') echo esc_attr('selected'); ?>>Vietnamese</option>
+                    <option value="cy" <?php if($wpTranslateOptions['default_language'] == 'cy') echo esc_attr('selected'); ?>>Welsh</option>
+                    <option value="yi" <?php if($wpTranslateOptions['default_language'] == 'yi') echo esc_attr('selected'); ?>>Yiddish</option>
                 </select>
                 <h3><?php _e('Translation Tracking - Google Analytics', 'wp-translate'); ?></h3>
                 <label><?php _e('Tracking enabled', 'wp-translate'); ?>:</label> <input type="checkbox" name="trackingEnabled" value="true"<?php echo ($wpTranslateOptions['tracking_enabled']) ? " checked='yes'" : ""; ?> />
@@ -122,9 +122,9 @@ if($rss)
 	$title = $item->title;
 	$link = $item->link;
 	$published_on = $item->pubDate;
-	$description = $item->description;
+	$desc_attrription = $item->desc_attrription;
 	echo '<h4><a href="'.$link.'">'.$title.'</a></h4>';
-	echo '<p>'.$description.'</p>';
+	echo '<p>'.$desc_attrription.'</p>';
 	if ($count >= 5) {
 		break;	
 	}
