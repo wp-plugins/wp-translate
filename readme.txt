@@ -23,7 +23,7 @@ This **Google Translate WordPress Plugin** dynamically adds a Google Translate w
 
 = WordPress Plugin Features =
 
-* Set default language
+* Set your website's default language
 * Track translation usage with Goolge Analytics
 * Enhanced widget positioning - (<a href="http://labs.hahncreativegroup.com/wp-translate-pro/">Pro Version</a>)
 
