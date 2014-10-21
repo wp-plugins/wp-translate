@@ -99,39 +99,23 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
                 <div style="float: left; width: 60%; min-width: 488px;">
                 <p><strong><a href="http://labs.hahncreativegroup.com/wp-translate-pro/?src=wpt" target="_blank"><?php _e('Try WP Translate Pro', 'wp-translate'); ?></a></strong><br /><em><?php _e('Pro features include: Enhanced widget positioning and ad free', 'wp-translate'); ?>...</em></p>
 <p><strong><?php _e('Try WP Easy Gallery Pro', 'wp-translate'); ?></strong><br /><em><?php _e('Pro Features include: Multi-image uploader, Enhanced admin section for easier navigation, Image preview pop-up, and more', 'wp-translate'); ?>...</em></p>
-<p><a href="http://labs.hahncreativegroup.com/wordpress-gallery-plugin/?src=wpt" target="_blank"><img title="WP-Easy-Gallery-Pro_468x88" src="http://labs.hahncreativegroup.com/wp-content/uploads/2012/02/WP-Easy-Gallery-Pro_468x88.gif" alt="" border="0" width="468" height="88" /></a></p>
+<p><a href="http://labs.hahncreativegroup.com/wordpress-gallery-plugin/?src=wpt" target="_blank"><img title="WP-Easy-Gallery-Pro_468x88" src="../wp-content/plugins/wp-translate/images/WP-Easy-Gallery-Pro_468x88.gif" alt="" border="0" width="468" height="88" /></a></p>
 <p><strong><?php _e('Try Custom Post Donations Pro', 'wp-translate'); ?></strong><br /><em><?php _e('This WordPress plugin will allow you to create unique customized PayPal donation widgets to insert into your WordPress posts or pages and accept donations. Features include: Multiple Currencies, Multiple PayPal accounts, Custom donation form display titles, and more.', 'wp-translate'); ?></em></p>
-<p><a href="http://labs.hahncreativegroup.com/wordpress-paypal-plugin/?src=wpt" target="_blank"><img src="http://labs.hahncreativegroup.com/wp-content/uploads/2011/10/CustomPostDonationsPro-Banner.gif" width="374" height="60" border="0" alt="Custom Post Donations Pro" /></a></p>
+<p><a href="http://labs.hahncreativegroup.com/wordpress-paypal-plugin/?src=wpt" target="_blank"><img src="../wp-content/plugins/wp-translate/images/CustomPostDonationsPro-Banner.gif" width="374" height="60" border="0" alt="Custom Post Donations Pro" /></a></p>
 <p><strong><?php _e('Try ReFlex Gallery Pro', 'wp-translate'); ?></strong><br /><em><?php _e('ReFlex Gallery is a fully responsive WordPress image gallery plugin that is actually two galleries in one.', 'wp-translate'); ?></em></p>
-<p><a href="http://wordpress-photo-gallery.com/?src=wpt" target="_blank"><img src="http://labs.hahncreativegroup.com/wp-content/uploads/2012/08/reflex_gallery_page_image_374x190_v4.jpg" width="374" height="190" alt="ReFlex Gallery - Responsive WordPress Photo Gallery" border="0" /></a></p>
+<p><a href="http://wordpress-photo-gallery.com/?src=wpt" target="_blank"><img src="../wp-content/plugins/wp-translate/images/reflex_gallery_page_image_374x190_v4.jpg" width="374" height="190" alt="ReFlex Gallery - Responsive WordPress Photo Gallery" border="0" /></a></p>
 <p><strong><?php _e('Try Email Obfuscate', 'wp-translate'); ?></strong><br /><em><?php _e('Email Obfuscate is a Lightweight WordPress/jQuery plugin that prevents spam-bots from harvesting your email addresses by dynamically obfuscating email addresses on your site.', 'wp-translate'); ?></em><br /><a href="http://codecanyon.net/item/wordpressjquery-email-obfuscate-plugin/721738?ref=HahnCreativeGroup" target="_blank">Email Obfuscate Plugin</a></p>
 <p><a href="http://codecanyon.net/item/wordpressjquery-email-obfuscate-plugin/721738?ref=HahnCreativeGroup" target="_blank"><img alt="WordPress/jQuery Email Obfuscate Plugin - CodeCanyon Item for Sale" border="0" class="landscape-image-magnifier preload no_preview" data-item-author="HahnCreativeGroup" data-item-category="JavaScript / Miscellaneous" data-item-cost="4" data-item-name="WordPress/jQuery Email Obfuscate Plugin" data-preview-height="" data-preview-url="http://0.s3.envato.com/files/92331839/WordPress-Email-Obfuscate_item_page_image_590x300_v1.jpg" data-preview-width="" height="80" src="http://2.s3.envato.com/files/92331838/WordPress-Email-Obfuscate_thumb_80x80.jpg" title="" width="80" data-tooltip="WordPress/jQuery Email Obfuscate Plugin"></a></p>
 <p><em><?php _e('Please consider making a donatation for the continued development of this plugin. Thank you.', 'wp-translate'); ?></em></p>
 <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></a></p>
 </div>
-<div style="float: right; width: 25%; height: 700px; padding: 10px; min-width: 165px; margin-right: 14px; overflow: scroll;">
-<?php
-$url = "http://labs.hahncreativegroup.com/feed/";
-$rss = simplexml_load_file($url);
-if($rss)
-{
-  echo '<h3>'.$rss->channel->title.'</h3>';
-  $items = $rss->channel->item;
-  $count = 0;
-  foreach($items as $item)
-  {
-	$count++;	
-	$title = $item->title;
-	$link = $item->link;
-	$published_on = $item->pubDate;
-	$desc_attrription = $item->desc_attrription;
-	echo '<h4><a href="'.$link.'">'.$title.'</a></h4>';
-	echo '<p>'.$desc_attrription.'</p>';
-	if ($count >= 5) {
-		break;	
-	}
-  }
-}
-?>
+<div id="rss" style="float: right; width: 25%; height: 700px; padding: 10px; min-width: 165px;">
 </div>
+<script type="text/javascript">
+jQuery(document).ready(function(){			
+	jQuery.ajax({url:"../wp-content/plugins/wp-translate/admin/rss.php",success:function(result){
+		jQuery("#rss").html(result);
+  }});
+});
+</script>
 </div>
