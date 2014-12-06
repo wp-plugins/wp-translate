@@ -10,6 +10,16 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
 				$wpTranslateOptions['tracking_enabled'] = false;
 			
 			$wpTranslateOptions['tracking_id'] = $_POST["trackingId"];
+			
+			if (isset($_POST["autoDisplay"]))
+				$wpTranslateOptions['auto_display'] = true;
+			else
+				$wpTranslateOptions['auto_display'] = false;
+				
+			if (isset($_POST["excludeMobile"]))
+				$wpTranslateOptions['exclude_mobile'] = true;
+			else
+				$wpTranslateOptions['exclude_mobile'] = false;
 				
 			update_option("wpTranslateOptions", $wpTranslateOptions);
 			?>  
@@ -92,9 +102,14 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
                 <h3><?php _e('Translation Tracking - Google Analytics', 'wp-translate'); ?></h3>
                 <label><?php _e('Tracking enabled', 'wp-translate'); ?>:</label> <input type="checkbox" name="trackingEnabled" value="true"<?php echo ($wpTranslateOptions['tracking_enabled']) ? " checked='yes'" : ""; ?> />
                 <br />
-                <label><?php _e('Tracking ID (UA#)', 'wp-translate'); ?></label>: <input type="text" name="trackingId" value="<?php echo $wpTranslateOptions['tracking_id']; ?>" />                
+                <label><?php _e('Tracking ID (UA#)', 'wp-translate'); ?></label>: <input type="text" name="trackingId" value="<?php echo $wpTranslateOptions['tracking_id']; ?>" />              
+                
+				<h3><?php _e('Exclude Mobile Browsers from Translations', 'wptranslate'); ?></h3>
+				<label><?php _e('Exclude Mobile Browsers', 'wptranslate'); ?>:</label> <input type="checkbox" name="excludeMobile" value="true"<?php echo ($wpTranslateOptions['exclude_mobile']) ? " checked='yes'" : ""; ?> />
+				<h3><?php _e('Translation Toolbar Auto Display', 'wptranslate'); ?></h3>
+				<label><?php _e('Toolbar Auto Display', 'wptranslate'); ?>:</label> <input type="checkbox" name="autoDisplay" value="true"<?php echo ($wpTranslateOptions['auto_display']) ? " checked='yes'" : ""; ?> />
                 <p class="major-publishing-actions"><input type="submit" name="Submit" class="button-primary" value="<?php _e('Save Settings', 'wp-translate'); ?>" /></p>
-                </form>
+				</form>
                 <br />
                 <div style="float: left; width: 60%; min-width: 488px;">
                 <p><strong><a href="http://labs.hahncreativegroup.com/wp-translate-pro/?src=wpt" target="_blank"><?php _e('Try WP Translate Pro', 'wp-translate'); ?></a></strong><br /><em><?php _e('Pro features include: Enhanced widget positioning and ad free', 'wp-translate'); ?>...</em></p>
