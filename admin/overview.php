@@ -30,8 +30,9 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
 	$wpTranslateOptions = get_option("wpTranslateOptions");
 ?>
 <div id='wrap'>
-	<h2><?php _e('WP Translate - Settings', 'wp-translate'); ?></h2>
-    
+	<h2><?php _e('WP Translate Pro', 'wptranslate'); ?></h2>
+	<p>You can also use the <a href="<?php echo get_site_url().'/wp-admin/widgets.php'; ?>">WP Translate Widget</a> that will insert a drop down list of languages instead of the default tool bar.</p>
+	<h2><?php _e('WP Translate - Settings', 'wp-translate'); ?></h2>    
     <h3 style="float: left; width 50%;"><?php _e('Default Language', 'wp-translate'); ?></h3>
     <p style="float: right; width 50%; margin-right: 14px;"><strong><em><a href="http://labs.hahncreativegroup.com/wp-translate-pro/"><?php _e('Try WP Translate Pro', 'wp-translate'); ?></a></em></strong></p>
     <div style="clear: both;"></div>
