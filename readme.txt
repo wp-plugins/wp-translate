@@ -42,75 +42,75 @@ This **Google Translate WordPress Plugin** dynamically adds a Google Translate w
 
 == Changelog ==
 
-**Jan. 19, 2015 - v4.8**
+**v4.8**
 
 * Added widget functionality that presents visitors with drop down for translations instead of tool bar
 
-**Dec. 6, 2014 - v4.7**
+**v4.7**
 
 * Added setting to default Google Translate toolbar open or closed
 * Added setting to include or exclude mobile browsers from seeing translate tool bar
 
-**Oct. 21, 2014 - v4.6**
+**v4.6**
 
 * code refinements
 
-**Aug. 7, 2014 - v4.5.2**
+**v4.5.2**
 
 * Verified WordPress 3.9.2 compatibility
 
-**July, 31, 2014 - v4.5.1**
+**v4.5.1**
 
 * i18n preperation coding
 
-**June 25, 2014 - v4.5**
+**v4.5**
 
 * Minor bug fixes
 
-**June 21, 2014 - v4.4**
+**v4.4**
 
 * Minor code updates
 
-**May 14, 2014 - v4.3.5**
+**v4.3.5**
 
 * Code to escape html attributes added for security
 
-**Apr. 14, 2014 - v4.3.4**
+**v4.3.4**
 
 * Added nonce for security
 
-**Jan. 20, 2014 - v4.3.3**
+**v4.3.3**
 
 * Added Windows Phone to list of excluded mobile browsers
 
-**Jan. 7, 2014 - v4.3.1**
+**v4.3.1**
 
 * Fixed bug preventing widget from showing
 
-**Jan. 5, 2014 - v4.3**
+**v4.3**
 
 * Exclude from mobile browsers
 
-**Sept. 7, 2013 - v4.2**
+**v4.2**
 
 * Prevent the translation bar from blocking the profile menu of the admin bar when logged in
 
-**Nov. 28, 2012 - v4.0.1**
+**v4.0.1**
 
 * Code refinement and bug fixes
 
-**Sept. 13, 2012 - v4.0**
+**v4.0**
 
 * Added Google Analytics Integration
 
-**Jul. 19, 2012 - v3.0**
+**v3.0**
 
 * Tightened security to prevent cross-site scripting attacks
 
-**Mar. 26, 2012 - v1.0**
+**v1.0**
 
 * Added ability to select default langauge
 
-**Feb. 6, 2012 - v0.5**
+**v0.5**
 
 * First Release
