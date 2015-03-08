@@ -30,7 +30,7 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
 	$wpTranslateOptions = get_option("wpTranslateOptions");
 ?>
 <div id='wrap'>
-	<h2><?php _e('WP Translate Pro', 'wptranslate'); ?></h2>
+	<h2><?php _e('WP Translate', 'wptranslate'); ?></h2>
 	<p>You can also use the <a href="<?php echo get_site_url().'/wp-admin/widgets.php'; ?>">WP Translate Widget</a> that will insert a drop down list of languages instead of the default tool bar.</p>
 	<h2><?php _e('WP Translate - Settings', 'wp-translate'); ?></h2>    
     <h3 style="float: left; width 50%;"><?php _e('Default Language', 'wp-translate'); ?></h3>
@@ -122,7 +122,7 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
 <p><a href="http://wordpress-photo-gallery.com/?src=wpt" target="_blank"><img src="../wp-content/plugins/wp-translate/images/reflex_gallery_page_image_374x190_v4.jpg" width="374" height="190" alt="ReFlex Gallery - Responsive WordPress Photo Gallery" border="0" /></a></p>
 <p><strong><?php _e('Try Email Obfuscate', 'wp-translate'); ?></strong><br /><em><?php _e('Email Obfuscate is a Lightweight WordPress/jQuery plugin that prevents spam-bots from harvesting your email addresses by dynamically obfuscating email addresses on your site.', 'wp-translate'); ?></em><br /><a href="http://codecanyon.net/item/wordpressjquery-email-obfuscate-plugin/721738?ref=HahnCreativeGroup" target="_blank">Email Obfuscate Plugin</a></p>
 <p><a href="http://codecanyon.net/item/wordpressjquery-email-obfuscate-plugin/721738?ref=HahnCreativeGroup" target="_blank"><img alt="WordPress/jQuery Email Obfuscate Plugin - CodeCanyon Item for Sale" border="0" class="landscape-image-magnifier preload no_preview" data-item-author="HahnCreativeGroup" data-item-category="JavaScript / Miscellaneous" data-item-cost="4" data-item-name="WordPress/jQuery Email Obfuscate Plugin" data-preview-height="" data-preview-url="http://0.s3.envato.com/files/92331839/WordPress-Email-Obfuscate_item_page_image_590x300_v1.jpg" data-preview-width="" height="80" src="http://2.s3.envato.com/files/92331838/WordPress-Email-Obfuscate_thumb_80x80.jpg" title="" width="80" data-tooltip="WordPress/jQuery Email Obfuscate Plugin"></a></p>
-<p><em><?php _e('Please consider making a donatation for the continued development of this plugin. Thank you.', 'wp-translate'); ?></em></p>
+<p><em><?php _e('Please consider making a donation for the continued development of this plugin. Thank you.', 'wp-translate'); ?></em></p>
 <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJVXJP3V8GE2J" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></a></p>
 </div>
 <div id="rss" style="float: right; width: 25%; height: 700px; padding: 10px; min-width: 165px;">

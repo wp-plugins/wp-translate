@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Translate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-07 19:17-0800\n"
-"PO-Revision-Date: 2015-03-07 19:19-0800\n"
+"POT-Creation-Date: 2015-03-08 16:06-0800\n"
+"PO-Revision-Date: 2015-03-08 16:18-0800\n"
 "Last-Translator: Tyson Hahn <tysons_music@yahoo.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -15,24 +15,25 @@ msgstr ""
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:26
 msgid "WP Translate settings have been saved."
-msgstr ""
+msgstr "WP Translate einstellungen gespeichert wurden."
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:33
-msgid "WP Translate Pro"
-msgstr ""
+#, fuzzy
+msgid "WP Translate"
+msgstr "WP Translate - Einstellungen"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:35
 msgid "WP Translate - Settings"
-msgstr ""
+msgstr "WP Translate - Einstellungen"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:36
 msgid "Default Language"
-msgstr ""
+msgstr "Default Sprache"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:37
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:116
 msgid "Try WP Translate Pro"
-msgstr ""
+msgstr "Try WP Translate Pro"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:43
 msgid "Detect language"
@@ -272,73 +273,73 @@ msgstr ""
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:103
 msgid "Translation Tracking - Google Analytics"
-msgstr ""
+msgstr "Übersetzung Verfolgung - Google Analytics"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:104
 msgid "Tracking enabled"
-msgstr ""
+msgstr "Tracking aktiviert"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:106
 msgid "Tracking ID (UA#)"
-msgstr ""
+msgstr "Tracking ID (UA#)"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:108
 msgid "Exclude Mobile Browsers from Translations"
-msgstr ""
+msgstr "Ausschließen mobile Browser von Übersetzungen"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:109
 msgid "Exclude Mobile Browsers"
-msgstr ""
+msgstr "Ausschließen mobilen Browsern"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:110
 msgid "Translation Toolbar Auto Display"
-msgstr ""
+msgstr "Übersetzung Werkzeugleiste Anzeige"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:111
 msgid "Toolbar Auto Display"
-msgstr ""
+msgstr "Übersetzung Werkzeugleiste Anzeige"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:112
 msgid "Save Settings"
-msgstr ""
+msgstr "Einstellungen speichern"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:116
 msgid "Pro features include: Enhanced widget positioning and ad free"
-msgstr ""
+msgstr "Pro Funktionen: Verbesserte Widget Positionierung und werbefrei"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:117
 msgid "Try WP Easy Gallery Pro"
-msgstr ""
+msgstr "Try WP Easy Gallery Pro"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:117
 msgid "Pro Features include: Multi-image uploader, Enhanced admin section for easier navigation, Image preview pop-up, and more"
-msgstr ""
+msgstr "Pro Eigenschaften umfassen: mehrere Bild Uploader, erweiterte Adminbereich für eine einfachere Navigation, Bildvorschau Pop-up und mehr"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:119
 msgid "Try Custom Post Donations Pro"
-msgstr ""
+msgstr "Try Custom Post Donations Pro"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:119
 msgid "This WordPress plugin will allow you to create unique customized PayPal donation widgets to insert into your WordPress posts or pages and accept donations. Features include: Multiple Currencies, Multiple PayPal accounts, Custom donation form display titles, and more."
-msgstr ""
+msgstr "Das Wordpress-Plugin ermöglicht es Ihnen, einzigartige kundenspezifische PayPal Spende Formen in Ihre Wordpress Beiträge oder Seiten einfügen und akzeptieren, Spenden zu erstellen. Eigenschaften umfassen: mehrere Währungen, mehrere PayPal-Konten, Kundenspendenformular Display-Titel, und mehr."
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:121
 msgid "Try ReFlex Gallery Pro"
-msgstr ""
+msgstr "Try ReFlex Gallery Pro"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:121
 msgid "ReFlex Gallery is a fully responsive WordPress image gallery plugin that is actually two galleries in one."
-msgstr ""
+msgstr "ReFlex Gallery ist ein voll reaktionsBildGalerie Wordpress-Plugin, das zwei verschiedene Galerie Plugin in einem ist."
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:123
 msgid "Try Email Obfuscate"
-msgstr ""
+msgstr "Try Email Obfuscate"
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:123
 msgid "Email Obfuscate is a Lightweight WordPress/jQuery plugin that prevents spam-bots from harvesting your email addresses by dynamically obfuscating email addresses on your site."
-msgstr ""
+msgstr "Email Obfuscate ist ein Leichtgewicht Wordpress / jQuery-Plugin, das Spam-Bots verhindert Ernte Ihre E-Mail-Adressen durch dynamische Verschleierung E-Mail-Adressen auf Ihrer Website."
 
 #: C:\xampp\htdocs\ThemeFactory\wp-content\plugins\wp-translate\admin/overview.php:125
 msgid "Please consider making a donatation for the continued development of this plugin. Thank you."
-msgstr ""
+msgstr "Bitte denke über eine Spende für die weitere Entwicklung dieses Plugins. Danke."
 
